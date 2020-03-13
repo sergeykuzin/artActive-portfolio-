@@ -25,7 +25,13 @@ gulp.task('buildCss', () => {
     .pipe(csso({ restructure: true }))
     .pipe(gulp.dest(dist + 'css/'))
     .pipe(browsersync.stream());
-});
+};
+
+gulp.task('copyImage', () => {
+  return gulp
+    .src('./src/img/**/*')
+    .pipe(gulp.dest(dist + 'img/'));
+})
 
 gulp.task('clean', () => del('./dist'));
 
@@ -81,7 +87,7 @@ gulp.task('watch', () => {
   gulp.watch('./src/js/**/*.js', gulp.parallel('build-js'));
 });
 
-gulp.task('build', gulp.parallel('clean', 'buildHtml', 'buildCss', 'build-js'));
+gulp.task('build', gulp.parallel('clean', 'buildHtml', 'buildCss', 'build-js', 'copyImage'));
 
 gulp.task('build-prod-js', () => {
   return gulp
