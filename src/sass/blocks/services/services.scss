@@ -1,0 +1,159 @@
+.services {
+  padding-top: 100px;
+  background-color: #faf8fb;
+
+  @include tablet-width-only {
+    padding-top: 75px;
+  }
+
+  @include mobile-width-only {
+    padding-top: 65px;
+  }
+}
+.services .container {
+  position: relative;
+}
+.services__title {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  padding-left: 15px;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    max-width: 750px;
+    margin-bottom: 60px;
+  }
+
+  @include mobile-width-only {
+    max-width: 320px;
+    margin-bottom: 40px;
+  }
+}
+.services__large-format-printing {
+  padding-bottom: 125px;
+
+  @include mobile-width-only {
+    margin-bottom: 30px;
+  }
+}
+.large-format-printing__title {
+  margin-bottom: 50px;
+
+  @include tablet-width-only {
+    margin-bottom: 65px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 45px;
+  }
+}
+.large-format-printing__title,
+.large-format-printing__list,
+.request-consultation {
+  width: 41.491%;
+
+  @include tablet-width-only {
+    width: auto;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.large-format-printing__list {
+  margin-bottom: 75px;
+  margin-left: 20px;
+  list-style-type: disc;
+
+  @include tablet-width-only {
+    margin-bottom: 40px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 35px;
+  }
+}
+.large-format-printing__item {
+  font-size: 14px;
+  color: #5e606a;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.request-consultation {
+  display: flex;
+  height: 120px;
+  padding: 33px 37px 36px 37px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #883eca;
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  color: #fff;
+
+  @include mobile-width-only {
+    height: 180px;
+    padding: 30px 25px;
+    flex-direction: column;
+  }
+}
+.request__text {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-width-only {
+    flex-direction: row;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 30px;
+  }
+}
+.request-consultation__have-questions {
+  font-family: $open-sans-italic;
+  font-size: 13px;
+
+  @include tablet-width-only {
+    margin-right: 35px;
+  }
+}
+.request-consultation__message {
+  font-family: $open-sans-semibold;
+}
+.request-consultationon__button {
+  width: 171px;
+  height: 48px;
+  margin-right: 0;
+
+  @include tablet-width-only {
+    width: 248px;
+    margin-bottom: 0;
+  }
+}
+.slider-large-format-printing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 570px;
+  height: 564px;
+  background-image: url("../img/services/slider-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    position: static;
+    width: 735px;
+    height: 562px;
+    margin-bottom: 50px;
+    background-image: url("../img/services/slider-tablet.jpg");
+  }
+
+  @include mobile-width-only {
+    position: static;
+    width: 290px;
+    height: 290px;
+    margin-bottom: 45px;
+    background-image: url("../img/services/slider-mobile.jpg");
+  }
+}
