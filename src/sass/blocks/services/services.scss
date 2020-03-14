@@ -1,4 +1,5 @@
 .services {
+  position: relative;
   padding-top: 100px;
   background-color: #faf8fb;
 
@@ -8,6 +9,29 @@
 
   @include mobile-width-only {
     padding-top: 65px;
+  }
+}
+.double-line {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    width: 2px;
+    height: 83px;
+    background-color: #7f38bd;
+
+    @include mobile-width-only {
+      display: none;
+    }
+  }
+  &:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:after {
+    top: -71px;
+    left: 49%;
   }
 }
 .services .container {
