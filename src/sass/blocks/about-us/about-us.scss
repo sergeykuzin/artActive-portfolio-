@@ -1,0 +1,198 @@
+.about-us .container {
+  position: relative;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  @include tablet-width-only {
+    padding-top: 50px;
+    padding-bottom: 140px;
+    flex-direction: column;
+  }
+
+  @include mobile-width-only {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+}
+.about-us__description-wrapper {
+  padding-left: 35px;
+
+  @include tablet-width-only {
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 35px;
+    padding-left: 0;
+  }
+}
+.about-us__description-wrapper,
+.about-us__services-wrapper {
+  width: 48.684%;
+
+  @include tablet-width-only {
+    width: auto;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.section-title {
+  font-family: $muller-bold;
+  font-size: 30px;
+  color: #7f38bd;
+}
+.section-subtitle {
+  font-family: $muller-medium;
+  font-size: 32px;
+  color: #383d52;
+
+  @include mobile-width-only {
+    font-size: 24px;
+  }
+}
+.about-us__title {
+  margin-bottom: 75px;
+
+  @include tablet-width-only {
+    margin-bottom: 55px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 30px;
+  }
+}
+.about-us__subtitle {
+  margin-bottom: 60px;
+
+  @include tablet-width-only {
+    margin-bottom: 30px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 35px;
+  }
+}
+.about-us__description {
+  font-size: 14px;
+  color: #5e606a;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+
+    @include tablet-width-only {
+      margin-bottom: 30px;
+    }
+
+    @include mobile-width-only {
+      margin-bottom: 30px;
+    }
+  }
+}
+.about-us__service-list {
+  background-image: url("../img/about-us/arrow-decor-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 50% 34%;
+
+  @include tablet-width-only {
+    background-image: url("../img/about-us/arrow-decor-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/about-us/arrow-decor-mobile.png");
+    background-position: 74% 34%;
+  }
+}
+.about-us__service-item {
+  display: flex;
+  position: relative;
+  width: 165px;
+  padding-top: 120px;
+  font-size: 13px;
+  text-align: center;
+  color: #5e606a;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 106px;
+    height: 106px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &--ebook {
+    margin-left: 32.727%;
+
+    @include tablet-width-only {
+      margin-left: 22.7%;
+    }
+
+    @include mobile-width-only {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &--tablet {
+    margin-top: -10px;
+    margin-left: auto;
+
+    @include tablet-width-only {
+      margin-top: -55px;
+    }
+
+    @include mobile-width-only {
+      width: 107px;
+      margin-top: 40px;
+    }
+  }
+  &--xxl {
+    margin-top: -120px;
+
+    @include tablet-width-only {
+      margin-top: -68px;
+      margin-left: -10px;
+    }
+
+    @include mobile-width-only {
+      width: 128px;
+      margin-top: -80px;
+    }
+  }
+  &--car {
+    margin-top: -20px;
+    margin-left: 40%;
+
+    @include tablet-width-only {
+      margin-top: -50px;
+      margin-left: 51.7%;
+    }
+
+    @include mobile-width-only {
+      margin-top: 50px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--ebook:before {
+    background-image: url("../img/about-us/ebook-icon.png");
+  }
+  &--tablet:before {
+    background-image: url("../img/about-us/tablet-icon.png");
+  }
+  &--xxl:before {
+    background-image: url("../img/about-us/xxl-icon.png");
+  }
+  &--car:before {
+    background-image: url("../img/about-us/car-icon.png");
+  }
+}

@@ -48,6 +48,53 @@ body {
   overflow-y: hidden;
 }
 
+.background-line {
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+
+  @include mobile-width-only {
+    border: 0;
+  }
+
+  &:before,
+  &:after {
+    width: 1px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #f3f3f3;
+    z-index: -10;
+  }
+
+  &:before {
+    left: 24.786%;
+
+    @include mobile-width-only {
+      left: 16.4%;
+    }
+  }
+
+  &:after {
+    right: 24.786%;
+    
+    @include mobile-width-only {
+      right: 16.4%;
+    }
+  }
+}
+.background-middle-line:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: #f3f3f3;
+  z-index: -10;
+}
+
 ul {
   margin: 0;
   padding: 0;
