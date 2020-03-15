@@ -1,9 +1,13 @@
 .faq {
+  position: relative;
   padding-bottom: 170px;
 
   @include mobile-width-only {
     padding-bottom: 85px;
   }
+}
+.faq .container {
+  position: relative;
 }
 .faq__title {
   margin-bottom: 70px;
