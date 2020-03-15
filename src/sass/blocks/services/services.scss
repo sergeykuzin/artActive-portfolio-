@@ -380,10 +380,13 @@
   padding: 10px;
   border: 0;
   border-bottom: 1px solid #eee;
-  font-family: $open-sans-italic;
-  font-size: 14px;
-  color: #868995;
   background-color: #faf8fb;
+
+  &::placeholder {
+    font-family: $open-sans-italic;
+    font-size: 14px;
+    color: #868995;
+  }
 
   @include mobile-width-only {
     width: 100%;
