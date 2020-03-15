@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const csso = require('gulp-csso');
 const pug = require('gulp-pug');
 const webpack = require('webpack-stream');
@@ -22,6 +23,9 @@ gulp.task('buildCss', () => {
   return gulp
     .src('./src/sass/pages/*.scss')
     .pipe(sass())
+    .pipe(autoprefixer({
+      cascade: false,
+    }))
     .pipe(csso({ restructure: true }))
     .pipe(gulp.dest(dist + 'css/'))
     .pipe(browsersync.stream());
