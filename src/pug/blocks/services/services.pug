@@ -3,7 +3,7 @@ section.services.double-line
   ul.services__list
     li.services__item.services__large-format-printing
       .container
-        h3.large-format-printing__title.section-subtitle
+        h3.large-format-printing__title.section-subtitle.title-decor-number
           | Широкоформатная печать баннеров, растяжек, афиш
         ul.large-format-printing__list
           li.large-format-printing__item
@@ -28,5 +28,39 @@ section.services.double-line
           button(type="button").order-print-button.request-consultationon__button Заказать
     li.services__item.services__print-for-interior
       .container
-    li.services__item.services__operational-printing
+        .print-for-interior-wrapper
+          h3.print-for-interior__title.section-subtitle.title-decor-number
+            | Широкоформатная печать для вашего интерьера
+          p.print-for-interior__description
+            | Печатаем широкоформатные фотографии на глянцевой и матовой
+            | фотобумаге разной плотности, на глянцевом и матовом холсте
+            | или на самоклеющейся пленке. также можем предложить обработку
+            | и редактирование ваших фотографий силами наших дизайнеров:
+            | композиции, фотоколлаж, ретушь, различные эффекты 
+          button(type="button").order-print-button.print-for-interior__button Оставить заявку
+    li.services__item.services__operational-printing.double-line
       .container
+        .operational-printing-wrapper
+          h3.operational-printing__title.title-decor-number.section-subtitle
+            | Оперативная полиграфия — от визитки до баннера
+          p.operational-printing__description
+            | Стандартные рекламные буклеты имеют точно такой же формат,
+            | как листовки формата А4. Но здесь имеет место одна деталь,
+            | заключающаяся в том, что буклетам, помимо обрезки необходима
+            | ещё и фальцовка. Но, несмотря на всё это, в данном случае
+            | цифровая печать может произвести 500 экземпляров рекламных буклетов.
+            | В оперативном варианте мы способны пропустить 500 штук рекламных листовок.
+          p.operational-printing__description
+            | На цифровом принтере допускается напечатание до 1000 штук
+            | визиток размером 90х50 мм оперативным способом. Вам будет
+            | отпускаться полностью готовый тираж с резкой и упаковкой.
+          .application-for-consultation
+            p.application-for-consultation__text
+              span.application-for-consultation__have-questions
+                | Есть вопросы?
+              span.application-for-consultation__message
+                | Оставьте заявку на консультацию
+            form.feedback-form
+              input(type="text", placeholder="Имя").feedback-form__name
+              input(type="text", placeholder="Телефон").feedback-form__phone
+              button(type="button").feedback-form__button.order-print-button Отправить
