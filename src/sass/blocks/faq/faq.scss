@@ -112,6 +112,7 @@
 .faq .feedback-form {
   @include tablet-width-only {
     display: flex;
+    max-width: 100%;
     margin-bottom: 0;
   }
 }
