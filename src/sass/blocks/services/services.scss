@@ -185,3 +185,80 @@
     background-image: url("../img/services/slider-mobile.jpg");
   }
 }
+.services__print-for-interior {
+  min-height: 933px;
+  padding-top: 130px;
+  background-color: #fff;
+  background-image: url("../img/services/sofa-with-flower-desktop.png");
+  background-position: 16% 137px;
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-image: none;
+    min-height: auto;
+  }
+
+  @include mobile-width-only {
+    padding-top: 70px;
+    background-image: none;
+  }
+}
+.services__print-for-interior .container {
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    min-height: 690px;
+    padding-bottom: 90px;
+    background-image: url("../img/services/sofa-with-flower-tablet.png");
+    background-position: 100% 57px;
+  }
+
+  @include mobile-width-only {
+    min-height: 700px;
+    background-image: url("../img/services/sofa-with-flower-mobile.png");
+    background-position: 40px 300px;
+  }
+}
+.print-for-interior-wrapper {
+  width: 48.684%;
+  margin-left: auto;
+  font-size: 14px;
+  color: #5e606a;
+
+  @include tablet-width-only {
+    width: 76.111%;
+    margin-left: 0;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.print-for-interior__title {
+  margin-bottom: 50px;
+
+  @include tablet-width-only {
+    width: 470px;
+    margin-bottom: 65px;
+  }
+}
+.print-for-interior__description {
+  margin-bottom: 60px;
+
+  @include tablet-width-only {
+    margin-bottom: 50px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 45px;
+    line-height: 24px;
+  }
+}
+.print-for-interior__button {
+  @include mobile-width-only {
+    width: 100%;
+    font-size: 16px;
+  }
+}
