@@ -1,0 +1,157 @@
+.faq {
+  padding-bottom: 170px;
+
+  @include mobile-width-only {
+    padding-bottom: 85px;
+  }
+}
+.faq__title {
+  margin-bottom: 70px;
+
+  @include tablet-width-only {
+    margin-bottom: 50px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 30px;
+  }
+}
+.question {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.question__item {
+  max-width: 525px;
+  margin-bottom: 50px;
+
+  @include tablet-width-only {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  @include mobile-width-only {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+}
+.question__title {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $open-sans-semibold;
+  font-size: 20px;
+  color: #383d52;
+}
+.question__answer {
+  font-size: 14px;
+  color: #5e606a;
+}
+.faq .request-consultation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 220px;
+  padding: 40px 60px 55px 310px;
+  align-items: flex-start;
+  background-image: url("../img/faq/form-background.jpg");
+  background-repeat: no-repeat;
+  background-position: -28px -5px;
+
+  @include tablet-width-only {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    padding-left: 35px;
+  }
+
+  @include mobile-width-only {
+    min-height: 390px;
+    padding: 45px 22px 55px 25px;
+    background-image: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 241px;
+    height: 219px;
+    background-image: url("../img/faq/question-mark.png");
+    background-repeat: no-repeat;
+
+    @include tablet-width-only {
+      top: -60px;
+      left: 510px;
+    }
+
+    @include mobile-width-only {
+      width: 94px;
+      height: 102px;
+      top: 0;
+      right: 0;
+      left: auto;
+      background-image: url("../img/faq/question-mark-mobile.png");
+    }
+  }
+}
+.faq .request__text {
+  @include tablet-width-only {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+.faq .request-consultation__have-questions {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.faq .request-consultation__message {
+  font-size: 20px;
+}
+.faq .feedback-form {
+  @include tablet-width-only {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+.faq .feedback-form__name,
+.faq .feedback-form__phone {
+  background-color: transparent;
+  color: #fff;
+
+  @include tablet-width-only {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+.faq .feedback-form__name {
+  @include tablet-width-only {
+    width: 180px;
+    margin-right: 50px;
+  }
+}
+.faq .feedback-form__phone {
+  @include tablet-width-only {
+    width: 170px;
+    margin-right: 60px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 40px;
+  }
+}
+.faq .feedback-form__button {
+  width: 192px;
+
+  @include mobile-width-only {
+    width: 100%;
+  }
+
+  &:after {
+    display: none;
+  }
+}
