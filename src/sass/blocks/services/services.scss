@@ -368,14 +368,14 @@
   font-family: $open-sans-semibold;
   font-size: 20px;
 }
-.feedback-form {
+.services__feedback-form {
   @include tablet-width-only {
     max-width: 240px;
     margin-bottom: 20px;
   }
 }
-.feedback-form__name,
-.feedback-form__phone {
+.services__feedback-form-name,
+.services__feedback-form-phone {
   width: 240px;
   padding: 10px;
   border: 0;
@@ -392,7 +392,7 @@
     width: 100%;
   }
 }
-.feedback-form__name {
+.services__feedback-form-name {
   margin-right: 40px;
 
   @include tablet-width-only {
@@ -405,7 +405,7 @@
     margin-bottom: 20px;
   }
 }
-.feedback-form__phone {
+.services__feedback-form-phone {
   @include tablet-width-only {
     margin-bottom: 35px;
   }
@@ -414,7 +414,7 @@
     margin-bottom: 35px;
   }
 }
-.feedback-form__button {
+.services__feedback-form-button {
   position: relative;
   width: 190px;
   margin-left: 45px;
