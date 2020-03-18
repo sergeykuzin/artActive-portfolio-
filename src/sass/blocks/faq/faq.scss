@@ -113,15 +113,15 @@
 .faq .request-consultation__message {
   font-size: 20px;
 }
-.faq .feedback-form {
+.faq .services__feedback-form {
   @include tablet-width-only {
     display: flex;
     max-width: 100%;
     margin-bottom: 0;
   }
 }
-.faq .feedback-form__name,
-.faq .feedback-form__phone {
+.faq .services__feedback-form-name,
+.faq .services__feedback-form-phone {
   background-color: transparent;
   color: #fff;
 
@@ -133,13 +133,13 @@
     color: #fff;
   }
 }
-.faq .feedback-form__name {
+.faq .services__feedback-form-name {
   @include tablet-width-only {
     width: 180px;
     margin-right: 50px;
   }
 }
-.faq .feedback-form__phone {
+.faq .services__feedback-form-phone {
   @include tablet-width-only {
     width: 170px;
     margin-right: 60px;
@@ -149,7 +149,7 @@
     margin-bottom: 40px;
   }
 }
-.faq .feedback-form__button {
+.faq .services__feedback-form-button {
   width: 192px;
 
   @include mobile-width-only {
