@@ -1,0 +1,116 @@
+.review {
+  position: relative;
+  max-width: 1370px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 70px;
+
+  @include tablet-width-only {
+    max-width: 750px;
+  }
+
+  @include mobile-width-only {
+    max-width: 320px;
+  }
+}
+.reviews-slider  {
+  padding-top: 20px;
+  overflow: hidden;
+}
+.review__title {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  @include tablet-width-only {
+    max-width: 720px;
+  }
+
+  @include mobile-width-only {
+    max-width: 280px;
+  }
+}
+.review__list {
+  margin-bottom: 40px;
+
+  @include mobile-width-only {
+    margin-bottom: 45px;
+  }
+}
+.review__item {
+  position: relative;
+  max-width: 845px;
+  min-height: 265px;
+  padding: 55px 85px 55px 255px;
+  box-shadow: 0 0 15px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  @include tablet-width-only {
+    max-width: 720px;
+    padding: 60px 65px 55px 250px;
+  }
+
+  @include mobile-width-only {
+    max-width: 290px;
+    padding: 240px 25px 45px 20px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 75px;
+    width: 136px;
+    height: 136px;
+    background-image: url("../img/reviews/alexandrov-maxim.png");
+    background-repeat: no-repeat;
+  }
+}
+.review__message {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5e606a;
+}
+.review__reviewer-name {
+  display: block;
+  margin-bottom: 5px;
+  font-family: $open-sans-semibold;
+  color: #383d52;
+}
+.review__reviewer-social-link {
+  font-family: $open-sans-semibold;
+  font-size: 14px;
+  color: #3594dd;
+}
+.review__navigation-buttons-wrapper {
+  margin-left: 260px;
+
+  @include tablet-width-only {
+    margin-left: 15px;
+  }
+
+  @include mobile-width-only {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+  }
+}
+.review__navigation-button-prev,
+.review__navigation-button-next {
+  width: 91px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.review__navigation-button-prev {
+  margin-right: 50px;
+  background-image: url("../img/reviews/arrow-left.png");
+}
+.review__navigation-button-next {
+  background-image: url("../img/reviews/arrow-right.png");
+}
