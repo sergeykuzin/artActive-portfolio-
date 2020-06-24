@@ -173,7 +173,6 @@
   right: 0;
   width: 570px;
   height: 460px;
-  background-image: url("../img/services/large-format-printing-banner-desktop.jpg");
   background-repeat: no-repeat;
 
   @include tablet-width-only {
@@ -181,7 +180,6 @@
     width: 719px;
     height: 460px;
     margin-bottom: 50px;
-    background-image: url("../img/services/large-format-printing-banner-tablet.jpg");
   }
 
   @include mobile-width-only {
@@ -189,14 +187,40 @@
     width: 290px;
     height: 187px;
     margin-bottom: 45px;
+  }
+}
+.no-webp .large-format-printing__banner {
+  &.lazy {
+    background-image: none;
+  }
+  background-image: url("../img/services/large-format-printing-banner-desktop.jpg");
+
+  @include tablet-width-only {
+    background-image: url("../img/services/large-format-printing-banner-tablet.jpg");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/services/large-format-printing-banner-mobile.jpg");
+  }
+}
+.webp .large-format-printing__banner {
+  &.lazy {
+    background-image: none;
+  }
+  background-image: url("../img/webp/services/large-format-printing-banner-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/services/large-format-printing-banner-tablet.webp");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/webp/services/large-format-printing-banner-mobile.webp");
   }
 }
 .print-for-interior {
   min-height: 1060px;
   padding-top: 130px;
   background-color: #fff;
-  background-image: url("../img/services/sofa-with-flower-desktop.png");
   background-position: 16% 137px;
   background-repeat: no-repeat;
 
@@ -213,20 +237,75 @@
     background-image: none;
   }
 }
+.no-webp .print-for-interior {
+  &.lazy {
+    background-image: none;
+  }
+  background-image: url("../img/services/sofa-with-flower-desktop.png");
+
+  @include tablet-width-only {
+    background-image: none;
+  }
+
+  @include mobile-width-only {
+    background-image: none;
+  }
+}
+.webp .print-for-interior {
+  &.lazy {
+    background-image: none;
+  }
+  background-image: url("../img/webp/services/sofa-with-flower-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: none;
+  }
+
+  @include mobile-width-only {
+    background-image: none;
+  }
+}
 .print-for-interior .container {
   background-repeat: no-repeat;
 
   @include tablet-width-only {
     min-height: 690px;
     padding-bottom: 90px;
-    background-image: url("../img/services/sofa-with-flower-tablet.png");
     background-position: 100% 57px;
   }
 
   @include mobile-width-only {
     min-height: 700px;
-    background-image: url("../img/services/sofa-with-flower-mobile.png");
     background-position: 40px 300px;
+  }
+}
+.no-webp .print-for-interior .container {
+  @include tablet-width-only {
+    &.lazy {
+      background-image: none;
+    }
+
+    background-image: url("../img/services/sofa-with-flower-tablet.png");
+  }
+
+  @include mobile-width-only {
+    &.lazy {
+      background-image: none;
+    }
+
+    background-image: url("../img/services/sofa-with-flower-mobile.png");
+  }
+}
+.webp .print-for-interior .container {
+  &.lazy {
+    background-image: none;
+  }
+  @include tablet-width-only {
+    background-image: url("../img/webp/services/sofa-with-flower-tablet.webp");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/webp/services/sofa-with-flower-mobile.webp");
   }
 }
 .print-for-interior__inner {
@@ -287,14 +366,12 @@
     right: -90px;
     width: 648px;
     height: 544px;
-    background-image: url(../img/services/operational-printing-background-desktop.png);
 
     @include tablet-width-only {
       top: 400px;
       right: -32px;
       width: 364px;
       height: 381px;
-      background-image: url(../img/services/operational-printing-background-tablet.png);
     }
 
     @include mobile-width-only {
@@ -303,7 +380,38 @@
       transform: translateX(50%);
       width: 304px;
       height: 255px;
+    }
+  }
+}
+.no-webp .operational-printing__inner {
+  &.lazy:before {
+    background-image: none;
+  }
+  &:before {
+    background-image: url(../img/services/operational-printing-background-desktop.png);
+
+    @include tablet-width-only {
+      background-image: url(../img/services/operational-printing-background-tablet.png);
+    }
+
+    @include mobile-width-only {
       background-image: url(../img/services/operational-printing-background-mobile.png);
+    }
+  }
+}
+.webp .operational-printing__inner {
+  &.lazy:before {
+    background-image: none;
+  }
+  &:before {
+    background-image: url(../img/webp/services/operational-printing-background-desktop.webp);
+
+    @include tablet-width-only {
+      background-image: url(../img/webp/services/operational-printing-background-tablet.webp);
+    }
+
+    @include mobile-width-only {
+      background-image: url(../img/webp/services/operational-printing-background-mobile.webp);
     }
   }
 }

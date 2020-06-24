@@ -182,7 +182,11 @@
       transform: translateX(-50%);
     }
   }
-
+}
+.no-webp .about-us__service-item {
+  &--ebook:before {
+    background-image: none;
+  }
   &--ebook:before {
     background-image: url("../img/about-us/ebook-icon.png");
   }
@@ -194,5 +198,25 @@
   }
   &--car:before {
     background-image: url("../img/about-us/car-icon.png");
+  }
+}
+.webp .about-us__service-item {
+  &--ebook.lazy:before, 
+  &--tablet.lazy:before, 
+  &--xxl.lazy:before, 
+  &--car.lazy:before {
+    background-image: none;
+  }
+  &--ebook:before {
+    background-image: url("../img/webp/about-us/ebook-icon.webp");
+  }
+  &--tablet:before {
+    background-image: url("../img/webp/about-us/tablet-icon.webp");
+  }
+  &--xxl:before {
+    background-image: url("../img/webp/about-us/xxl-icon.webp");
+  }
+  &--car:before {
+    background-image: url("../img/webp/about-us/car-icon.webp");
   }
 }

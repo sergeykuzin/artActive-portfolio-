@@ -1,6 +1,8 @@
+import intersectionObserverPolyfill from 'intersection-observer/intersection-observer';
 import ReviewsSlider from './modules/ReviewsSlider';
 import MainMenuToggleButton from './modules/MainMenuToggleButton';
 import FeedbackForm from './modules/FeedbackForm';
+import lazyLoad from './modules/lazyLoad';
 
 document.addEventListener('DOMContentLoaded', () => {
   const mainMenuToggleButton = new MainMenuToggleButton(
@@ -9,11 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const reviewsSlider = new ReviewsSlider('.reviews-slider');
   reviewsSlider.init();
-
-  /*
-  const feedbackForm = new FeedbackForm('#feedback-form');
-  feedbackForm.init();
-  */
 
   const feedbackForm = new FeedbackForm({
     formOpeningElements: '.open-feedback-form-js',

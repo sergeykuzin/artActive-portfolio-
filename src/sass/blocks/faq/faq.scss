@@ -59,7 +59,6 @@
   min-height: 220px;
   padding: 40px 60px 55px 310px;
   align-items: flex-start;
-  background-image: url("../img/faq/form-background.jpg");
   background-repeat: no-repeat;
   background-position: -28px -5px;
 
@@ -82,7 +81,6 @@
     left: 30px;
     width: 241px;
     height: 219px;
-    background-image: url("../img/faq/question-mark.png");
     background-repeat: no-repeat;
 
     @include tablet-width-only {
@@ -96,7 +94,41 @@
       top: 0;
       right: 0;
       left: auto;
+    }
+  }
+}
+.no-webp .faq .request-consultation {
+  &.lazy:before {
+    background-image: none;
+  }
+
+  background-image: url("../img/faq/form-background.jpg");
+
+  &.lazy:before {
+    background-image: none;
+  }
+  &:before {
+    background-image: url("../img/faq/question-mark.png");
+
+    @include mobile-width-only {
       background-image: url("../img/faq/question-mark-mobile.png");
+    }
+  }
+}
+.webp .faq .request-consultation {
+  &.lazy {
+    background-image: none;
+  }
+
+  &.lazy:before {
+    background-image: none;
+  }
+
+  &:before {
+    background-image: url("../img/webp/faq/question-mark.webp");
+
+    @include mobile-width-only {
+      background-image: url("../img/webp/faq/question-mark-mobile.webp");
     }
   }
 }

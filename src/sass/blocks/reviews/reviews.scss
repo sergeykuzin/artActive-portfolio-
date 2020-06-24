@@ -64,8 +64,23 @@
     left: 75px;
     width: 136px;
     height: 136px;
-    background-image: url("../img/reviews/alexandrov-maxim.png");
     background-repeat: no-repeat;
+  }
+}
+.no-webp .review__item {
+  &.lazy:before {
+    background-image: none;
+  }
+  &:before {
+    background-image: url("../img/reviews/alexandrov-maxim.png");
+  }
+}
+.webp .review__item {
+  &.lazy:before {
+    background-image: none;
+  }
+  &:before {
+    background-image: url("../img/webp/reviews/alexandrov-maxim.webp");
   }
 }
 .review__message {
