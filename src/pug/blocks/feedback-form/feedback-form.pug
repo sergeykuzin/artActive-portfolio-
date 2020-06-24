@@ -3,7 +3,7 @@
     span.feedback-form__title Есть вопросы?
     span.feedback-form__subtitle Закажите звонок
     form(action="#")
-      input(type="text", placeholder="Имя", name="name")
-      input(type="text", placeholder="Телефон", name="phone")
-      button(type="submit") Отправить
+      input(type="text", placeholder="Имя", name="name").feedback-form__name
+      input(type="text", placeholder="Телефон", name="phone").feedback-form__phone
+      button(type="submit").feedback-form__send-button Отправить
     button.feedback-form__close-button X

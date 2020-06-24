@@ -18,14 +18,14 @@ section.services.double-line
             | изготовление цветопробы
           li.large-format-printing__item
             | доставка баннеров
-        .slider-large-format-printing
+        .large-format-printing__banner
         .request-consultation
           p.request__text
             span.request-consultation__have-questions
               | Есть вопросы?
             span.request-consultation__message
               | Закажите консультацию
-          button(type="button")#feedback-form.order-print-button.request-consultationon__button Заказать
+          button(type="button").order-print-button.request-consultationon__button.open-feedback-form-js Заказать
     li.services__item.print-for-interior
       .container
         .print-for-interior__inner
@@ -37,7 +37,7 @@ section.services.double-line
             | или на самоклеющейся пленке. также можем предложить обработку
             | и редактирование ваших фотографий силами наших дизайнеров:
             | композиции, фотоколлаж, ретушь, различные эффекты 
-          button(type="button")#feedback-form.order-print-button.print-for-interior__button Оставить заявку
+          button(type="button").order-print-button.print-for-interior__button.open-feedback-form-js Оставить заявку
     li.services__item.operational-printing.double-line
       .container
         .operational-printing__inner
@@ -60,7 +60,7 @@ section.services.double-line
                 | Есть вопросы?
               span.application-for-consultation__message
                 | Оставьте заявку на консультацию
-            form.services__feedback-form
-              input(type="text", placeholder="Имя").services__feedback-form-name
-              input(type="text", placeholder="Телефон").services__feedback-form-phone
-              button(type="button").services__feedback-form-button.order-print-button Отправить
+            form(action="#", onsubmit="alert('Отправлено'); return false").services__feedback-form
+              input(type="text", placeholder="Имя", name="name", aria-label="Имя" required).services__feedback-form-name
+              input(type="text", placeholder="Телефон", name="phone", aria-label="Телефон" required).services__feedback-form-phone
+              button(type="submit").services__feedback-form-button.order-print-button Отправить

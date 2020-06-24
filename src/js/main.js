@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const reviewsSlider = new ReviewsSlider('.reviews-slider');
   reviewsSlider.init();
 
+  /*
   const feedbackForm = new FeedbackForm('#feedback-form');
+  feedbackForm.init();
+  */
+
+  const feedbackForm = new FeedbackForm({
+    formOpeningElements: '.open-feedback-form-js',
+    feedbackFormWrapper: '.feedback-form',
+    closeButton: '.feedback-form__close-button',
+    sendButton: '.feedback-form__send-button',
+    nameField: '.feedback-form__name',
+    phoneField: '.feedback-form__phone',
+  });
   feedbackForm.init();
 });

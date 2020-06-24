@@ -167,29 +167,29 @@
     margin-bottom: 0;
   }
 }
-.slider-large-format-printing {
+.large-format-printing__banner {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 570px;
-  height: 564px;
-  background-image: url("../img/services/slider-desktop.jpg");
+  height: 460px;
+  background-image: url("../img/services/large-format-printing-banner-desktop.jpg");
   background-repeat: no-repeat;
 
   @include tablet-width-only {
     position: static;
-    width: 735px;
-    height: 562px;
+    width: 719px;
+    height: 460px;
     margin-bottom: 50px;
-    background-image: url("../img/services/slider-tablet.jpg");
+    background-image: url("../img/services/large-format-printing-banner-tablet.jpg");
   }
 
   @include mobile-width-only {
     position: static;
     width: 290px;
-    height: 290px;
+    height: 187px;
     margin-bottom: 45px;
-    background-image: url("../img/services/slider-mobile.jpg");
+    background-image: url("../img/services/large-format-printing-banner-mobile.jpg");
   }
 }
 .print-for-interior {
