@@ -8,6 +8,25 @@ block stylesheetAndScripts
     rel="stylesheet"
     href="css/index.css"
   )
+  script.
+    // script for checking webp support
+
+    function isWebpSupported() {
+      const elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d'))) {
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      return false;
+    }
+
+    function addWebpSupportClass(elemClass) {
+      document.documentElement.classList.add(elemClass);
+    }
+
+    isWebpSupported()
+      ? addWebpSupportClass('webp')
+      : addWebpSupportClass('no-webp');
 
 block content
   include ../blocks/page-header/page-header.pug
