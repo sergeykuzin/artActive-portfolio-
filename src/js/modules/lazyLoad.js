@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+const lazyLoad = () => {
   let lazyloadImages;
 
   if ('IntersectionObserver' in window) {
@@ -17,4 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
       imageObserver.observe(image);
     });
   }
-});
+};
+
+export default lazyLoad;

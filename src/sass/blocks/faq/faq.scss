@@ -98,6 +98,10 @@
   }
 }
 .no-webp .faq .request-consultation {
+  @include mobile-width-only {
+    background-image: none;
+  }
+
   &.lazy:before {
     background-image: none;
   }

@@ -505,7 +505,6 @@
   &:after {
     content: '';
     position: absolute;
-    // right: -140px;
     right: -12%;
     bottom: -36px;
     width: 503px;
@@ -527,6 +526,8 @@
   }
 }
 .services__feedback-form {
+  max-width: 100%;
+
   @include tablet-width-only {
     max-width: 240px;
     margin-bottom: 20px;

@@ -4,10 +4,12 @@ import MainMenuToggleButton from './modules/MainMenuToggleButton';
 import FeedbackForm from './modules/FeedbackForm';
 import lazyLoad from './modules/lazyLoad';
 
-document.addEventListener('DOMContentLoaded', () => {
+const runJS = () => {
   const mainMenuToggleButton = new MainMenuToggleButton(
     document.querySelector('.menu-toggle'),
   );
+
+  lazyLoad();
 
   const reviewsSlider = new ReviewsSlider('.reviews-slider');
   reviewsSlider.init();
@@ -21,4 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     phoneField: '.feedback-form__phone',
   });
   feedbackForm.init();
-});
+};
+
+document.addEventListener('DOMContentLoaded', runJS);

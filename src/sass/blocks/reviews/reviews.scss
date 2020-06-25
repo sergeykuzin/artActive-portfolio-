@@ -67,20 +67,44 @@
     background-repeat: no-repeat;
   }
 }
-.no-webp .review__item {
-  &.lazy:before {
-    background-image: none;
-  }
+.no-webp .review__item--alexandrov {
   &:before {
     background-image: url("../img/reviews/alexandrov-maxim.png");
   }
 }
-.webp .review__item {
-  &.lazy:before {
-    background-image: none;
-  }
+.webp .review__item--alexandrov {
   &:before {
     background-image: url("../img/webp/reviews/alexandrov-maxim.webp");
+  }
+}
+.no-webp .review__item--egorov {
+  &:before {
+    background-image: url("../img/reviews/egorov-igor.png");
+  }
+}
+.webp .review__item--egorov {
+  &:before {
+    background-image: url("../img/webp/reviews/egorov-igor.webp");
+  }
+}
+.no-webp .review__item--kozlova {
+  &:before {
+    background-image: url("../img/reviews/kozlova-mila.png");
+  }
+}
+.webp .review__item--kozlova {
+  &:before {
+    background-image: url("../img/webp/reviews/kozlova-mila.webp");
+  }
+}
+.no-webp .review__item--polnikova {
+  &:before {
+    background-image: url("../img/reviews/polnikova-elena.png");
+  }
+}
+.webp .review__item--polnikova {
+  &:before {
+    background-image: url("../img/webp/reviews/polnikova-elena.webp");
   }
 }
 .review__message {
