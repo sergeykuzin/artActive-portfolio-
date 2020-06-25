@@ -4,6 +4,7 @@ import MainMenuToggleButton from './modules/MainMenuToggleButton';
 import FeedbackForm from './modules/FeedbackForm';
 import lazyLoad from './modules/lazyLoad';
 import SiteNavigation from './modules/SiteNavigation';
+import hideShowContacts from './modules/hideShowContacts'; 
 
 const runJS = () => {
   const mainMenuToggleButton = new MainMenuToggleButton(
@@ -30,6 +31,8 @@ const runJS = () => {
     phoneField: '.feedback-form__phone',
   });
   feedbackForm.init();
+
+  hideShowContacts();
 };
 
 document.addEventListener('DOMContentLoaded', runJS);
