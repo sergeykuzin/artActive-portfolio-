@@ -3,11 +3,18 @@ import ReviewsSlider from './modules/ReviewsSlider';
 import MainMenuToggleButton from './modules/MainMenuToggleButton';
 import FeedbackForm from './modules/FeedbackForm';
 import lazyLoad from './modules/lazyLoad';
+import SiteNavigation from './modules/SiteNavigation';
 
 const runJS = () => {
   const mainMenuToggleButton = new MainMenuToggleButton(
     document.querySelector('.menu-toggle'),
   );
+
+  const siteNavigation = new SiteNavigation({
+    mainNavigationMenu: document.querySelector('.page-header__menu-wrapper'),
+    buttonToOpenMainMenu: document.querySelector('.menu-toggle'),
+  });
+  siteNavigation.init();
 
   lazyLoad();
 
