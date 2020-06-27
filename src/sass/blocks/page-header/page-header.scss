@@ -79,7 +79,7 @@
   border-bottom: 2px solid #fff;
   cursor: pointer;
   z-index: 150;
-
+  font-size: 0;
 
   &:before {
     content: '';
@@ -113,8 +113,6 @@
     display: flex;
   }
 }
-
-
 .page-header__menu-wrapper {
   display: flex;
   width: 100%;
@@ -228,7 +226,6 @@
     color: #fb0275;
   }
 
-  // @include tablet-width-only {
   @include mobile-tablet-width-only {
     margin-right: 0;
     margin-bottom: 30px;
@@ -257,7 +254,6 @@
     color: #fb0275;
   }
 
-  // @include tablet-width-only {
   @include mobile-tablet-width-only {
     margin-top: 30px;
     border-color: #fb0275;
