@@ -2,7 +2,7 @@ import intersectionObserverPolyfill from 'intersection-observer/intersection-obs
 import ReviewsSlider from './modules/ReviewsSlider';
 import MainMenuToggleButton from './modules/MainMenuToggleButton';
 import FeedbackForm from './modules/FeedbackForm';
-import lazyLoad from './modules/lazyLoad';
+import lazyLoadingImages from './modules/lazyLoadingImages';
 import SiteNavigation from './modules/SiteNavigation';
 import hideShowContacts from './modules/hideShowContacts'; 
 import YandexMaps from './modules/YandexMaps';
@@ -18,7 +18,7 @@ const runJS = () => {
   });
   siteNavigation.init();
 
-  lazyLoad();
+  lazyLoadingImages();
 
   const reviewsSlider = new ReviewsSlider('.reviews-slider');
   reviewsSlider.init();

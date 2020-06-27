@@ -1,4 +1,4 @@
-const lazyLoad = () => {
+const lazyLoadingImages = () => {
   let lazyloadImages;
 
   if ('IntersectionObserver' in window) {
@@ -19,4 +19,4 @@ const lazyLoad = () => {
   }
 };
 
-export default lazyLoad;
+export default lazyLoadingImages;
