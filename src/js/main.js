@@ -5,6 +5,7 @@ import FeedbackForm from './modules/FeedbackForm';
 import lazyLoad from './modules/lazyLoad';
 import SiteNavigation from './modules/SiteNavigation';
 import hideShowContacts from './modules/hideShowContacts'; 
+import YandexMaps from './modules/YandexMaps';
 
 const runJS = () => {
   const mainMenuToggleButton = new MainMenuToggleButton(
@@ -31,6 +32,11 @@ const runJS = () => {
     phoneField: '.feedback-form__phone',
   });
   feedbackForm.init();
+
+  const yandexMaps = new YandexMaps({
+    mapWrapper: document.querySelector('.map-wrapper'),
+  });
+  yandexMaps.init();
 
   hideShowContacts();
 };

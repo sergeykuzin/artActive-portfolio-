@@ -149,7 +149,9 @@ fieldset {
 
   border: 0;
 }
-
+section {
+  overflow: hidden;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";

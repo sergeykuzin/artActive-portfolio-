@@ -17,9 +17,13 @@
 .map-wrapper {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
   left: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 
   & iframe {
     width: 100%;
@@ -33,6 +37,34 @@
     @include mobile-width-only {
       height: 535px;
     }
+  }
+}
+.no-webp .map-wrapper { 
+  &.lazy {
+    background-image: none;
+  }
+  @include mobile-width-only {
+    background-image: url('../img/contacts/yandex-map-before-load-mobile.jpg');
+  }
+  @include tablet-width-only {
+    background-image: url('../img/contacts/yandex-map-before-load-tablet.jpg');
+  }
+  @include desktop {
+    background-image: url('../img/contacts/yandex-map-before-load-desktop.jpg');
+  }
+}
+.webp .map-wrapper {
+  &.lazy {
+    background-image: none;
+  }
+  @include mobile-width-only {
+    background-image: url('../img/webp/contacts/yandex-map-before-load-mobile.webp');
+  }
+  @include tablet-width-only {
+    background-image: url('../img/webp/contacts/yandex-map-before-load-tablet.webp');
+  }
+  @include desktop {
+    background-image: url('../img/webp/contacts/yandex-map-before-load-desktop.webp');
   }
 }
 .contacts__inner {
