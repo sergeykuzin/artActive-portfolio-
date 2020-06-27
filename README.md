@@ -7,7 +7,7 @@ Yandex maps, webp + lazyload (IntersectionObserverAPI + polyfill for IE), swiper
 <https://sergeykuzin.github.io/portfolio/artactive/index.html>
 
 ## Responsive
-![responsive-sparta.png](./responsive-sparta.png)
+![responsive-sparta.png](./responsive-artactive.png)
 
 ## Preview
 [mobile version in png](./preview-mobile.png)
