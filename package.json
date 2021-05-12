@@ -38,7 +38,7 @@
   "dependencies": {
     "gulp-webp": "^4.0.1",
     "intersection-observer": "^0.11.0",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   },
   "config": {
     "commitizen": {
